@@ -22,6 +22,12 @@ Teleporter-like thing, based on the chrono berries, you have a "wand" to click a
 and then you make a marker somewhere else(block), the marker takes you to the destination saved, and back again when needed\
 Return totem, crafted with chronoberry paste and a regular totem, does the totem effects but also teleports you back to the saved location
 
+Allow berry effect combining, make a combination tree with foodstuffs, like terraria crafting - all in one version at the end
+
+Explorers FOODNAME, different exploration effects
+
+Animal-specific variants, for herbis and carnis, to feed pets and cattle. 
+
 # Changes
 Fireshine berries as a trade in bartering?
 
