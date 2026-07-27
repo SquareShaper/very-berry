@@ -55,51 +55,6 @@ public class ModBlocks {
             properties -> new ThornBerryBranch(properties.breakInstantly().sounds(BlockSoundGroup.SWEET_BERRY_BUSH).ticksRandomly()
                     .pistonBehavior(PistonBehavior.DESTROY).noCollision().mapColor(MapColor.DARK_GREEN)));
 
-    //two tall berry bush
-//    public static final Block CHRONOBERRY_PLANT = registerBlockNoItem("chronoberry_plant",
-//            properties -> new ChronoberryPlant(properties.breakInstantly().sounds(BlockSoundGroup.CROP).ticksRandomly()
-//                    .pistonBehavior(PistonBehavior.DESTROY).noCollision().mapColor(MapColor.EMERALD_GREEN)));
-
-//the Copper block that chronoberries spawn from
-//    public static final Block NOTCHED_COPPER_BLOCK = registerBlock("notched_copper_block",
-//            properties -> new OxidizableNotchedBlock(Oxidizable.OxidationLevel.UNAFFECTED,properties.ticksRandomly()
-//                    .sounds(BlockSoundGroup.COPPER).mapColor(Blocks.COPPER_BLOCK.getDefaultMapColor()).strength(3.0F, 6.0F)
-//                    .requiresTool()));
-//
-//    public static final Block EXPOSED_NOTCHED_COPPER_BLOCK = registerBlock("exposed_notched_copper_block",
-//            properties -> new OxidizableNotchedBlock(Oxidizable.OxidationLevel.EXPOSED,properties.ticksRandomly()
-//                    .sounds(BlockSoundGroup.COPPER).mapColor(Blocks.COPPER_BLOCK.getDefaultMapColor()).strength(3.0F, 6.0F)
-//                    .requiresTool().mapColor(MapColor.TERRACOTTA_LIGHT_GRAY)));
-//
-//    public static final Block WEATHERED_NOTCHED_COPPER_BLOCK = registerBlock("weathered_notched_copper_block",
-//            properties -> new OxidizableNotchedBlock(Oxidizable.OxidationLevel.WEATHERED,properties.ticksRandomly()
-//                    .sounds(BlockSoundGroup.COPPER).mapColor(Blocks.COPPER_BLOCK.getDefaultMapColor()).strength(3.0F, 6.0F)
-//                    .requiresTool().mapColor(MapColor.DARK_AQUA)));
-//
-//    public static final Block OXIDIZED_NOTCHED_COPPER_BLOCK = registerBlock("oxidized_notched_copper_block",
-//            properties -> new OxidizableNotchedBlock(Oxidizable.OxidationLevel.OXIDIZED,properties.ticksRandomly()
-//                    .sounds(BlockSoundGroup.COPPER).mapColor(Blocks.COPPER_BLOCK.getDefaultMapColor()).strength(3.0F, 6.0F)
-//                    .requiresTool().mapColor(MapColor.TEAL)));
-//
-//    public static final Block WAXED_NOTCHED_COPPER_BLOCK = registerBlock("waxed_notched_copper_block",
-//            properties -> new NotchedBlock(properties.ticksRandomly()
-//                    .sounds(BlockSoundGroup.COPPER).mapColor(Blocks.COPPER_BLOCK.getDefaultMapColor()).strength(3.0F, 6.0F).requiresTool()));
-//
-//    public static final Block WAXED_EXPOSED_NOTCHED_COPPER_BLOCK = registerBlock("waxed_exposed_notched_copper_block",
-//            properties -> new NotchedBlock(properties.ticksRandomly()
-//                    .sounds(BlockSoundGroup.COPPER).mapColor(Blocks.COPPER_BLOCK.getDefaultMapColor()).strength(3.0F, 6.0F)
-//                    .requiresTool().mapColor(MapColor.TERRACOTTA_LIGHT_GRAY)));
-//
-//    public static final Block WAXED_WEATHERED_NOTCHED_COPPER_BLOCK = registerBlock("waxed_weathered_notched_copper_block",
-//            properties -> new NotchedBlock(properties.ticksRandomly()
-//                    .sounds(BlockSoundGroup.COPPER).mapColor(Blocks.COPPER_BLOCK.getDefaultMapColor()).strength(3.0F, 6.0F)
-//                    .requiresTool().mapColor(MapColor.DARK_AQUA)));
-//
-//    public static final Block WAXED_OXIDIZED_NOTCHED_COPPER_BLOCK = registerBlock("waxed_oxidized_notched_copper_block",
-//            properties -> new NotchedBlock(properties.ticksRandomly()
-//                    .sounds(BlockSoundGroup.COPPER).mapColor(Blocks.COPPER_BLOCK.getDefaultMapColor()).strength(3.0F, 6.0F)
-//                    .requiresTool().mapColor(MapColor.TEAL)));
-
     //Helper functions
     private static Block registerBlock(String name, Function<AbstractBlock.Settings, Block> function) {
         Block toRegister = function.apply(AbstractBlock.Settings.create().registryKey(RegistryKey.of(RegistryKeys.BLOCK, VeryBerry.id(name))));
