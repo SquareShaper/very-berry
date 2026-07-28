@@ -1,0 +1,30 @@
+{
+	"format_version": "1.21.6",
+	"credit": "Made with Blockbench",
+	"textures": {
+		"0": "very-berry:block/thornberry_branch_stage0",
+		"particle": "very-berry:block/thornberry_branch_stage0"
+	},
+	"elements": [
+		{
+			"from": [5, 3, 13],
+			"to": [11, 9, 17],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 5, 15]},
+			"faces": {
+				"north": {"uv": [6, 14, 12, 8], "texture": "#0"},
+				"east": {"uv": [6, 8, 12, 4], "rotation": 270, "texture": "#0"},
+				"south": {"uv": [0, 14, 6, 8], "texture": "#0"},
+				"west": {"uv": [0, 8, 6, 4], "rotation": 90, "texture": "#0"},
+				"up": {"uv": [0, 4, 6, 0], "texture": "#0"},
+				"down": {"uv": [6, 4, 12, 0], "texture": "#0"}
+			}
+		}
+	],
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [75, 45, 0],
+			"translation": [0, 2.5, 0],
+			"scale": [0.375, 0.375, 0.375]
+		}
+	}
+}

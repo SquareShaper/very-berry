@@ -40,14 +40,14 @@ public class ThornBerryBranch extends HorizontalFacingBlock implements Fertiliza
     private static final SoundEvent PICK_SOUND = SoundEvents.BLOCK_SWEET_BERRY_BUSH_PICK_BERRIES;
 
     //the base model
-    protected static final Vec3d minCube0 = new Vec3d(4, 3, 10);
-    protected static final Vec3d maxCube0 = new Vec3d(12, 12, 15);
-    protected static final Vec3d minCube1 = new Vec3d(4, 3, 10);
-    protected static final Vec3d maxCube1 = new Vec3d(12, 12, 15);
-    protected static final Vec3d minCube2 = new Vec3d(4, 3, 10);
-    protected static final Vec3d maxCube2 = new Vec3d(12, 12, 15);
-    protected static final Vec3d minCube3 = new Vec3d(4, 2, 9);
-    protected static final Vec3d maxCube3 = new Vec3d(12, 12, 15);
+    protected static final Vec3d minCube0 = new Vec3d(5, 3, 13);
+    protected static final Vec3d maxCube0 = new Vec3d(11, 9, 17);
+    protected static final Vec3d minCube1 = new Vec3d(5, 3, 10);
+    protected static final Vec3d maxCube1 = new Vec3d(11, 11, 17);
+    protected static final Vec3d minCube2 = new Vec3d(5, 3, 10);
+    protected static final Vec3d maxCube2 = new Vec3d(11, 12, 17);
+    protected static final Vec3d minCube3 = new Vec3d(5, 3, 10);
+    protected static final Vec3d maxCube3 = new Vec3d(11, 14, 17);
 
 
     protected static final VoxelShape[] AGE_TO_EAST_SHAPE = new VoxelShape[]{

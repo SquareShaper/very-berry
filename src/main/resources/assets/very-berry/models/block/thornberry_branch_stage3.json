@@ -1,0 +1,58 @@
+{
+	"format_version": "1.21.6",
+	"credit": "Made with Blockbench",
+	"textures": {
+		"0": "very-berry:block/thornberry_branch_stage1",
+		"1": "very-berry:block/thornberry_branch_stage0",
+		"3": "very-berry:block/thornberry1",
+		"particle": "very-berry:block/thornberry_branch_stage1"
+	},
+	"elements": [
+		{
+			"from": [5, 3, 13],
+			"to": [11, 9, 17],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 5, 15]},
+			"faces": {
+				"north": {"uv": [6, 14, 12, 8], "texture": "#1"},
+				"east": {"uv": [6, 8, 12, 4], "rotation": 270, "texture": "#1"},
+				"south": {"uv": [0, 14, 6, 8], "texture": "#1"},
+				"west": {"uv": [0, 8, 6, 4], "rotation": 90, "texture": "#1"},
+				"up": {"uv": [0, 4, 6, 0], "texture": "#1"},
+				"down": {"uv": [6, 4, 12, 0], "texture": "#1"}
+			}
+		},
+		{
+			"from": [6, 5, 10],
+			"to": [10, 11, 14],
+			"rotation": {"angle": 0, "axis": "y", "origin": [9, 5, 12]},
+			"faces": {
+				"north": {"uv": [0, 0, 4, 6], "texture": "#0"},
+				"east": {"uv": [8, 0, 12, 6], "texture": "#0"},
+				"south": {"uv": [12, 0, 16, 6], "texture": "#0"},
+				"west": {"uv": [4, 0, 8, 6], "texture": "#0"},
+				"up": {"uv": [0, 6, 4, 10], "texture": "#0"},
+				"down": {"uv": [4, 6, 8, 10], "texture": "#0"}
+			}
+		},
+		{
+			"from": [6.75, 11, 10.75],
+			"to": [9.25, 13.5, 13.25],
+			"rotation": {"angle": 0, "axis": "y", "origin": [7, 11, 11]},
+			"faces": {
+				"north": {"uv": [13.5, 0.5, 15.5, 2.5], "texture": "#3"},
+				"east": {"uv": [10.5, 0.5, 12.5, 2.5], "texture": "#3"},
+				"south": {"uv": [13.5, 3.5, 15.5, 5.5], "texture": "#3"},
+				"west": {"uv": [10.5, 3.5, 12.5, 5.5], "texture": "#3"},
+				"up": {"uv": [10.5, 6.5, 12.5, 8.5], "texture": "#3"},
+				"down": {"uv": [13.5, 6.5, 15.5, 8.5], "texture": "#3"}
+			}
+		}
+	],
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [75, 45, 0],
+			"translation": [0, 2.5, 0],
+			"scale": [0.375, 0.375, 0.375]
+		}
+	}
+}
