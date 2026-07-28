@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:campfire_cooking",
+  "category": "food",
+  "cookingtime": 100,
+  "experience": 0.3,
+  "ingredient": "very-berry:thornberry_slice",
+  "result": {
+    "id": "very-berry:thornberry_chip"
+  }
+}

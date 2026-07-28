@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "very-berry:thornberries"
+  ],
+  "result": {
+    "count": 4,
+    "id": "very-berry:thornberry_slice"
+  }
+}
