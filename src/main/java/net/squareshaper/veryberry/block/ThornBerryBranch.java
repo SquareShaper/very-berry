@@ -84,7 +84,7 @@ public class ThornBerryBranch extends HorizontalFacingBlock implements Fertiliza
     }
 
     public static float getMaxDrops() {
-        return 4;
+        return 1;
     }
 
     public static int getHarvestAge() {
@@ -110,8 +110,7 @@ public class ThornBerryBranch extends HorizontalFacingBlock implements Fertiliza
     protected ActionResult onUse(BlockState state, World world, BlockPos pos, PlayerEntity player, BlockHitResult hit) {
         int i = state.get(AGE);
         if (i == MAX_AGE) {
-            int j = 2 + world.random.nextInt(2);
-            dropStack(world, pos, new ItemStack(getBerryDrop(), j));
+            dropStack(world, pos, new ItemStack(getBerryDrop(), 1));
             world.playSound(null, pos, PICK_SOUND, SoundCategory.BLOCKS, 1.0F, 0.8F + world.random.nextFloat() * 0.4F);
             BlockState blockState = state.with(AGE, 1);
             world.setBlockState(pos, blockState, Block.NOTIFY_LISTENERS);
