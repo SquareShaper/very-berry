@@ -62,6 +62,11 @@ public class ModFoodComponents {
     public static final ConsumableComponent THORNBERRY_CHIPS_EFFECT = ConsumableComponents.food()
             .consumeEffect(new ApplyEffectsConsumeEffect(new StatusEffectInstance(ModEffects.THORNY, 1600, 0), 1f)).build();
 
+    public static final FoodComponent BUNDLED_THORNBERRY_CHIPS = new FoodComponent.Builder().nutrition(2).saturationModifier(0.25f).alwaysEdible().build();
+
+    public static final ConsumableComponent BUNDLED_THORNBERRY_CHIPS_EFFECT = ConsumableComponents.food()
+            .consumeEffect(new ApplyEffectsConsumeEffect(new StatusEffectInstance(ModEffects.THORNY, 3200, 0), 1f)).build();
+
     public static void registerModFoodComponents() {
         VeryBerry.LOGGER.info("Registering Food Components for " + VeryBerry.MOD_ID + "...");
     }
