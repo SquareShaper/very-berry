@@ -70,5 +70,8 @@ public class ModModelProvider extends FabricModelProvider {
         //Berry Foods
         itemModelGenerator.register(ModItems.FIRESHINE_BERRY_JUICE, Models.GENERATED);
         itemModelGenerator.register(ModItems.RIMEBERRY_MUFFIN, Models.GENERATED);
+        itemModelGenerator.register(ModItems.THORNBERRY_SLICE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.THORNBERRY_CHIP, Models.GENERATED);
+        itemModelGenerator.register(ModItems.BUNDLED_THORNBERRY_CHIPS, Models.GENERATED);
     }
 }
