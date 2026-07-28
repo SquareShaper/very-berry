@@ -41,22 +41,7 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.blockStateCollector.accept(VariantsBlockModelDefinitionCreator.of(ModBlocks.FIRESHINE_BERRY_BODY).with(
                 createBooleanModelMap(Properties.BERRIES, weightedVariant4, weightedVariant3)));
 
-        //Void Berry Moss - currently moved to blockstates folder, hard coded json
-//        blockStateModelGenerator.blockStateCollector
-//                .accept(VariantsBlockStateSupplier.create(ModBlocks.VOID_BERRY_MOSS)
-//                                .coordinate(BlockStateVariantMap.create(Properties.AGE_3)
-//                                                .register(0, BlockStateVariant.create().put(VariantSettings.MODEL, ModelIds.getBlockSubModelId(ModBlocks.VOID_BERRY_MOSS, "_stage0")))
-//                                                .register(1, BlockStateVariant.create().put(VariantSettings.MODEL, ModelIds.getBlockSubModelId(ModBlocks.VOID_BERRY_MOSS, "_stage1")))
-//                                                .register(2, BlockStateVariant.create().put(VariantSettings.MODEL, ModelIds.getBlockSubModelId(ModBlocks.VOID_BERRY_MOSS, "_stage2")))
-//                                                .register(3, BlockStateVariant.create().put(VariantSettings.MODEL, ModelIds.getBlockSubModelId(ModBlocks.VOID_BERRY_MOSS, "_stage3")))
-//                                ).coordinate(BlockStateModelGenerator.createSouthDefaultHorizontalRotationStates())
-//                );
-
-
-//        hard code as JSON as well...
-//        blockStateModelGenerator.blockStateCollector.accept(VariantsBlockModelDefinitionCreator.of(ModBlocks.THORNBERRY_BRANCH)
-//                .with(BlockStateVariantMap.models(Properties.AGE_3).generate(stage -> createWeightedVariant(blockStateModelGenerator
-//                        .createSubModel(ModBlocks.THORNBERRY_BRANCH, "_age" + stage, Models.CROSS, TextureMap::cross)))));
+        // void and thorn are hard coded as json files
     }
 
     @Override
