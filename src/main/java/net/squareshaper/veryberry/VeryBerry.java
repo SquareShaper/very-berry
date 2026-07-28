@@ -93,35 +93,15 @@ public class VeryBerry implements ModInitializer {
 			ticks = ticks - minutes * minute;
 			int seconds = Math.floorDiv(ticks, second);
 			output = hours + ":" + addZeroIfOneDigit(minutes) + ":" +  addZeroIfOneDigit(seconds);
-		}
-		if (ticks >= minute) {
+		} else if (ticks >= minute) {
 			int minutes = Math.floorDiv(ticks, minute);
 			ticks = ticks - minutes * minute;
 			int seconds = Math.floorDiv(ticks, second);
 			output = addZeroIfOneDigit(minutes) + ":" +  addZeroIfOneDigit(seconds);
-		}
-		if (ticks >= second){
+		} else if (ticks >= second){
 			int seconds = Math.floorDiv(ticks, second);
 			output = "00:" +  addZeroIfOneDigit(seconds);
 		}
 		return output;
-	}
-
-	public static void addEffectTooltips(ItemStack stack, Item.TooltipContext context, TooltipDisplayComponent displayComponent, Consumer<Text> textConsumer, TooltipType type) {
-		List<ConsumeEffect> consumeEffects = stack.get(DataComponentTypes.CONSUMABLE).onConsumeEffects();
-
-		if (consumeEffects != null && !consumeEffects.isEmpty()) {
-			for (ConsumeEffect consumeEffect : consumeEffects) {
-				if (consumeEffect instanceof ApplyEffectsConsumeEffect applyEffectsConsumeEffect) {
-					List<StatusEffectInstance> effects = applyEffectsConsumeEffect.effects();
-
-					for (StatusEffectInstance effect : effects) {
-						textConsumer.accept(Text.translatable("tooltip.very-berry.effect", Text.translatable(effect.getTranslationKey()),
-								romanNumeralsOrEmpty(effect.getAmplifier()),
-								VeryBerry.tickToTime(effect.getDuration())).formatted(Formatting.BLUE));
-					}
-				}
-			}
-		}
 	}
 }
