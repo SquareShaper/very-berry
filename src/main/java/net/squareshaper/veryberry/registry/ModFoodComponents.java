@@ -47,6 +47,21 @@ public class ModFoodComponents {
     public static final ConsumableComponent THORNBERRIES_EFFECT = ConsumableComponents.food()
             .consumeEffect(new ApplyEffectsConsumeEffect(new StatusEffectInstance(ModEffects.THORNY, 400, 0), 1f)).build();
 
+    public static final FoodComponent THORNBERRY_SLICE = new FoodComponent.Builder().nutrition(1).saturationModifier(0.25f).alwaysEdible().build();
+
+    public static final ConsumableComponent THORNBERRY_SLICE_EFFECT = ConsumableComponents.food()
+            .consumeEffect(new ApplyEffectsConsumeEffect(new StatusEffectInstance(ModEffects.THORNY, 100, 0), 1f)).build();
+
+    public static final FoodComponent THORNBERRY_CHIP = new FoodComponent.Builder().nutrition(2).saturationModifier(0.25f).alwaysEdible().build();
+
+    public static final ConsumableComponent THORNBERRY_CHIP_EFFECT = ConsumableComponents.food()
+            .consumeEffect(new ApplyEffectsConsumeEffect(new StatusEffectInstance(ModEffects.THORNY, 400, 0), 1f)).build();
+
+    public static final FoodComponent BUNDLED_THORNBERRY_CHIPS = new FoodComponent.Builder().nutrition(2).saturationModifier(0.25f).alwaysEdible().build();
+
+    public static final ConsumableComponent BUNDDLED_THORNBERRY_CHIPS_EFFECT = ConsumableComponents.food()
+            .consumeEffect(new ApplyEffectsConsumeEffect(new StatusEffectInstance(ModEffects.THORNY, 400, 0), 1f)).build();
+
     public static void registerModFoodComponents() {
         VeryBerry.LOGGER.info("Registering Food Components for " + VeryBerry.MOD_ID + "...");
     }

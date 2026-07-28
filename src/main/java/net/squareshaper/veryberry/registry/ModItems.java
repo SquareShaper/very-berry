@@ -12,6 +12,7 @@ import net.minecraft.registry.RegistryKeys;
 import net.squareshaper.veryberry.VeryBerry;
 import net.squareshaper.veryberry.component.EffectFoodComponent;
 import net.squareshaper.veryberry.component.TextDescriptionComponent;
+import net.squareshaper.veryberry.item.BundledThornberryChips;
 
 import java.util.function.Function;
 
@@ -51,6 +52,22 @@ public class ModItems {
                     .recipeRemainder(Items.BUCKET)
                     .component(ModDataComponentTypes.TEXT_DESCRIPTION, new TextDescriptionComponent("item.very-berry.rimeberry_muffin.tooltip"))));
 
+    public static final Item THORNBERRY_SLICE = registerItem("thornberry_slice", setting -> new Item(
+            setting.food(ModFoodComponents.THORNBERRY_SLICE, ModFoodComponents.THORNBERRY_SLICE_EFFECT)
+                    .component(ModDataComponentTypes.EFFECT_FOOD, new EffectFoodComponent())
+                    .component(ModDataComponentTypes.TEXT_DESCRIPTION, new TextDescriptionComponent("item.very-berry.thornberry_slice.tooltip"))));
+
+    public static final Item THORNBERRY_CHIP = registerItem("thornberry_chip", setting -> new Item(
+            setting.food(ModFoodComponents.THORNBERRY_CHIP, ModFoodComponents.THORNBERRY_CHIP_EFFECT)
+                    .component(ModDataComponentTypes.EFFECT_FOOD, new EffectFoodComponent())
+                    .component(ModDataComponentTypes.TEXT_DESCRIPTION, new TextDescriptionComponent("item.very-berry.thornberry_chip.tooltip"))));
+
+    public static final Item BUNDLED_THORNBERRY_CHIPS = registerItem("bundled_thornberry_chips", setting -> new BundledThornberryChips(
+            setting.food(ModFoodComponents.BUNDLED_THORNBERRY_CHIPS, ModFoodComponents.BUNDDLED_THORNBERRY_CHIPS_EFFECT)
+                    .component(ModDataComponentTypes.EFFECT_FOOD, new EffectFoodComponent())
+                    .component(ModDataComponentTypes.TEXT_DESCRIPTION, new TextDescriptionComponent("item.very-berry.bundled_thornberry_chips.tooltip"))
+                    .maxDamage(32).maxCount(1)));
+
 
 
     private static Item registerItem(String name, Function<Item.Settings, Item> function) {
@@ -61,38 +78,23 @@ public class ModItems {
     public static void registerModItems() {
         VeryBerry.LOGGER.info("Registering Items for " + VeryBerry.MOD_ID + "...");
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.FOOD_AND_DRINK).register(entries -> {
-            entries.addAfter(Items.GLOW_BERRIES, ModItems.THORNBERRIES);
             entries.addAfter(Items.GLOW_BERRIES, ModItems.CHRONOBERRIES);
             entries.addAfter(Items.GLOW_BERRIES, ModItems.VOIDBERRIES);
+            entries.addAfter(Items.GLOW_BERRIES, ModItems.THORNBERRIES);
             entries.addAfter(Items.GLOW_BERRIES, ModItems.RIMEBERRIES);
             entries.addAfter(Items.GLOW_BERRIES, ModItems.FIRESHINE_BERRIES);
+            entries.addAfter(Items.PUMPKIN_PIE, ModItems.BUNDLED_THORNBERRY_CHIPS);
+            entries.addAfter(Items.PUMPKIN_PIE, ModItems.THORNBERRY_CHIP);
+            entries.addAfter(Items.PUMPKIN_PIE, ModItems.THORNBERRY_SLICE);
             entries.addAfter(Items.PUMPKIN_PIE, ModItems.RIMEBERRY_MUFFIN);
             entries.addAfter(Items.PUMPKIN_PIE, ModItems.FIRESHINE_BERRY_JUICE);
         });
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.NATURAL).register(entries -> {
             entries.addAfter(Items.SWEET_BERRIES, ModItems.VOIDBERRIES);
+            entries.addAfter(Items.SWEET_BERRIES, ModItems.THORNBERRIES);
             entries.addAfter(Items.SWEET_BERRIES, ModItems.RIMEBERRIES);
             entries.addAfter(Items.SWEET_BERRIES, ModItems.FIRESHINE_BERRIES);
         });
-
-        ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register(entries -> {
-//            entries.addAfter(Items.COPPER_BULB,ModBlocks.NOTCHED_COPPER_BLOCK);
-//            entries.addAfter(Items.EXPOSED_COPPER_BULB,ModBlocks.EXPOSED_NOTCHED_COPPER_BLOCK);
-//            entries.addAfter(Items.WEATHERED_COPPER_BULB,ModBlocks.WEATHERED_NOTCHED_COPPER_BLOCK);
-//            entries.addAfter(Items.OXIDIZED_COPPER_BULB,ModBlocks.OXIDIZED_NOTCHED_COPPER_BLOCK);
-//            entries.addAfter(Items.WAXED_COPPER_BULB,ModBlocks.WAXED_NOTCHED_COPPER_BLOCK);
-//            entries.addAfter(Items.WAXED_EXPOSED_COPPER_BULB,ModBlocks.WAXED_EXPOSED_NOTCHED_COPPER_BLOCK);
-//            entries.addAfter(Items.WAXED_WEATHERED_COPPER_BULB,ModBlocks.WAXED_WEATHERED_NOTCHED_COPPER_BLOCK);
-//            entries.addAfter(Items.WAXED_OXIDIZED_COPPER_BULB,ModBlocks.WAXED_OXIDIZED_NOTCHED_COPPER_BLOCK);
-        });
-
-//        ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(entries -> {
-//            entries.addAfter(Items.ARMADILLO_SCUTE, ModItems.THORNBERRY_PASTE);
-//            entries.addAfter(Items.ARMADILLO_SCUTE, ModItems.CHRONOBERRY_PASTE);
-//            entries.addAfter(Items.ARMADILLO_SCUTE, ModItems.VOIDBERRY_PASTE);
-//            entries.addAfter(Items.ARMADILLO_SCUTE, ModItems.RIMEBERRY_PASTE);
-//            entries.addAfter(Items.ARMADILLO_SCUTE, ModItems.FIRESHINE_BERRY_PASTE);
-//        });
     }
 }
