@@ -3,15 +3,15 @@
   "criteria": {
     "has_the_recipe": {
       "conditions": {
-        "recipe": "very-berry:bundled_thornberry_chips"
+        "recipe": "very-berry:thornberry_chips"
       },
       "trigger": "minecraft:recipe_unlocked"
     },
-    "has_thornberry_chips": {
+    "has_thornberry_chip": {
       "conditions": {
         "items": [
           {
-            "items": "very-berry:thornberry_chips"
+            "items": "very-berry:thornberry_chip"
           }
         ]
       },
@@ -21,12 +21,12 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_thornberry_chips"
+      "has_thornberry_chip"
     ]
   ],
   "rewards": {
     "recipes": [
-      "very-berry:bundled_thornberry_chips"
+      "very-berry:thornberry_chips"
     ]
   }
 }

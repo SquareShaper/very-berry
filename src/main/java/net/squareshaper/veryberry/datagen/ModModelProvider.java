@@ -72,6 +72,7 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.RIMEBERRY_MUFFIN, Models.GENERATED);
         itemModelGenerator.register(ModItems.THORNBERRY_SLICE, Models.GENERATED);
         itemModelGenerator.register(ModItems.THORNBERRY_CHIP, Models.GENERATED);
+        itemModelGenerator.register(ModItems.THORNBERRY_CHIPS, Models.GENERATED);
         itemModelGenerator.register(ModItems.BUNDLED_THORNBERRY_CHIPS, Models.GENERATED);
     }
 }

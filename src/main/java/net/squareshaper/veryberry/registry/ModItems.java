@@ -62,8 +62,13 @@ public class ModItems {
                     .component(ModDataComponentTypes.EFFECT_FOOD, new EffectFoodComponent())
                     .component(ModDataComponentTypes.TEXT_DESCRIPTION, new TextDescriptionComponent("item.very-berry.thornberry_chip.tooltip"))));
 
+    public static final Item THORNBERRY_CHIPS = registerItem("thornberry_chips", setting -> new Item(
+            setting.food(ModFoodComponents.THORNBERRY_CHIPS, ModFoodComponents.THORNBERRY_CHIPS_EFFECT)
+                    .component(ModDataComponentTypes.EFFECT_FOOD, new EffectFoodComponent())
+                    .component(ModDataComponentTypes.TEXT_DESCRIPTION, new TextDescriptionComponent("item.very-berry.thornberry_chips.tooltip"))));
+
     public static final Item BUNDLED_THORNBERRY_CHIPS = registerItem("bundled_thornberry_chips", setting -> new BundledThornberryChips(
-            setting.food(ModFoodComponents.BUNDLED_THORNBERRY_CHIPS, ModFoodComponents.BUNDDLED_THORNBERRY_CHIPS_EFFECT)
+            setting.food(ModFoodComponents.THORNBERRY_CHIPS, ModFoodComponents.THORNBERRY_CHIPS_EFFECT)
                     .component(ModDataComponentTypes.EFFECT_FOOD, new EffectFoodComponent())
                     .component(ModDataComponentTypes.TEXT_DESCRIPTION, new TextDescriptionComponent("item.very-berry.bundled_thornberry_chips.tooltip"))
                     .maxDamage(32).maxCount(1)));

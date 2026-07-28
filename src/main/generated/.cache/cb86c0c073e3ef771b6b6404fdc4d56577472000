@@ -10,6 +10,7 @@ f9a799468b0d812ba942fd719a02461a35d63eef assets/very-berry/items/fireshine_berri
 112c273882c7aa36003bc71a8c89cde296f09ad8 assets/very-berry/items/rimeberry_muffin.json
 6b7dd4e2274c82451a4bccc0bd777cc50c66c753 assets/very-berry/items/thornberries.json
 884c21e3f3660bf025e3d12d21178fea8376271c assets/very-berry/items/thornberry_chip.json
+f46b1b34063887817ad17b2ffe6e07e358a21636 assets/very-berry/items/thornberry_chips.json
 dd0dd4d3865a10c80f4af31d2990288fc034f6d8 assets/very-berry/items/thornberry_slice.json
 da3edfc93b2355dac880727951caf1d0bddbe229 assets/very-berry/items/voidberries.json
 29f90c286cf737c3a8b01f9acfc40ab772c9e17e assets/very-berry/models/block/fireshine_berry_body.json
@@ -28,5 +29,6 @@ f826a25a27de7a335c7d2663b1baf5a210e22236 assets/very-berry/models/item/fireshine
 f5f7b953311a50e6dff389b8dfd0904e10a40a16 assets/very-berry/models/item/rimeberry_muffin.json
 d5a6afdf6edffd7a205cd31b880e3dc0fa4f80d2 assets/very-berry/models/item/thornberries.json
 02874923c2c507b0a168aa45daeacf1c9967591b assets/very-berry/models/item/thornberry_chip.json
+91c0aaddc1850093774080d5f06baf0332dfff7d assets/very-berry/models/item/thornberry_chips.json
 bcad80cc851db90f0d5edcc184a90898859d72fe assets/very-berry/models/item/thornberry_slice.json
 bbdee95313bbf46efbeee696c596e33550e7ef3a assets/very-berry/models/item/voidberries.json

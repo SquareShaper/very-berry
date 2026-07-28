@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "very-berry:thornberry_chip",
+    "very-berry:thornberry_chip",
+    "very-berry:thornberry_chip",
+    "very-berry:thornberry_chip"
+  ],
+  "result": {
+    "count": 1,
+    "id": "very-berry:thornberry_chips"
+  }
+}

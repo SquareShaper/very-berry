@@ -58,13 +58,21 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 offerFoodCookingRecipe(exporter, "campfire_cooking", RecipeSerializer.CAMPFIRE_COOKING, CampfireCookingRecipe::new, 100, ModItems.THORNBERRY_SLICE,
                         ModItems.THORNBERRY_CHIP, 0.3f);
 
+                createShapeless(RecipeCategory.FOOD, ModItems.THORNBERRY_CHIPS, 1)
+                        .input(ModItems.THORNBERRY_CHIP)
+                        .input(ModItems.THORNBERRY_CHIP)
+                        .input(ModItems.THORNBERRY_CHIP)
+                        .input(ModItems.THORNBERRY_CHIP)
+                        .criterion(hasItem(ModItems.THORNBERRY_CHIP), conditionsFromItem(ModItems.THORNBERRY_CHIP))
+                        .offerTo(recipeExporter);
+
                 createShaped(RecipeCategory.FOOD, ModItems.BUNDLED_THORNBERRY_CHIPS)
-                        .input('#', ModItems.THORNBERRY_CHIP)
+                        .input('#', ModItems.THORNBERRY_CHIPS)
                         .input('x', ItemTags.BUNDLES)
                         .pattern("###")
                         .pattern("#x#")
                         .pattern("###")
-                        .criterion(hasItem(ModItems.THORNBERRY_CHIP), conditionsFromItem(ModItems.THORNBERRY_CHIP))
+                        .criterion(hasItem(ModItems.THORNBERRY_CHIPS), conditionsFromItem(ModItems.THORNBERRY_CHIPS))
                         .offerTo(recipeExporter);
             }
 

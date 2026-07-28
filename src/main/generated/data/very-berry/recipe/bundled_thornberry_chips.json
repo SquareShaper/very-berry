@@ -2,7 +2,7 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "key": {
-    "#": "very-berry:thornberry_chip",
+    "#": "very-berry:thornberry_chips",
     "x": "#minecraft:bundles"
   },
   "pattern": [
