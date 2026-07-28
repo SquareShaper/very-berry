@@ -1,8 +1,7 @@
-// 1.21.6	-999999999-01-01T00:00:00	Very Berry/Model Definitions
+// 1.21.8	-999999999-01-01T00:00:00	Very Berry/Model Definitions
 f5c5fe3ddc703748693cf07cc29e6d62bb9bd73a assets/very-berry/blockstates/fireshine_berry_body.json
 fb76b28848dd869140616856dc38a258b73b53e6 assets/very-berry/blockstates/fireshine_berry_head.json
 22ad546f33c6e035d33dc94e8c237085fdf5ae58 assets/very-berry/blockstates/rimeberry_bush.json
-f240eea003bb5c85bed088f053f359c5fe756885 assets/very-berry/blockstates/thornberry_branch.json
 6f09bbff7561e9caddc55c6bc54d298e45ea7351 assets/very-berry/items/chronoberries.json
 f9a799468b0d812ba942fd719a02461a35d63eef assets/very-berry/items/fireshine_berries.json
 511e93f13d5f6dd76dd818df0c040a84044a4bed assets/very-berry/items/fireshine_berry_juice.json
@@ -18,10 +17,6 @@ c1766ed3d52b48437ec817e61409592ebb5c0532 assets/very-berry/models/block/fireshin
 9fc383e51b78f5e1b12f976ed3296a8c40a7e793 assets/very-berry/models/block/rimeberry_bush_age1.json
 510e3ad0140cfb39345874f0ab41ab5c87dd83d2 assets/very-berry/models/block/rimeberry_bush_age2.json
 b849e6c5dfcdee54fe8619b29116bbc0912fab54 assets/very-berry/models/block/rimeberry_bush_age3.json
-a7afac8386c207f7c49815d8e40124f36f571742 assets/very-berry/models/block/thornberry_branch_age0.json
-90c1b94a9a98c56bea8d4a2b3c3a8f298661c78d assets/very-berry/models/block/thornberry_branch_age1.json
-ad997b5d72d156c99cfe3500d8aa4dc3bc74d012 assets/very-berry/models/block/thornberry_branch_age2.json
-c5d7b8c9e5f4692ef1020670f90c19c8151f65e7 assets/very-berry/models/block/thornberry_branch_age3.json
 7b5e8c13be56a1da0b0a109818d33ed40f627035 assets/very-berry/models/item/chronoberries.json
 0c96e747df2e775f7e63e7a9ecd1590c0ec93392 assets/very-berry/models/item/fireshine_berries.json
 f826a25a27de7a335c7d2663b1baf5a210e22236 assets/very-berry/models/item/fireshine_berry_juice.json

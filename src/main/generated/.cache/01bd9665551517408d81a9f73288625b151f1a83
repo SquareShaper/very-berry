@@ -1,6 +1,6 @@
-// 1.21.6	-999999999-01-01T00:00:00	Very Berry/Block Loot Tables
+// 1.21.8	-999999999-01-01T00:00:00	Very Berry/Block Loot Tables
 34062052714f13755ffae2c048f5a80e4ba7a5d8 data/very-berry/loot_table/blocks/fireshine_berry_body.json
 7067011a312e437f64675a74ef1f6a77f5ce352e data/very-berry/loot_table/blocks/fireshine_berry_head.json
 5e1be3041b6dedd5958de2151106447a23b8d041 data/very-berry/loot_table/blocks/rimeberry_bush.json
-009299525f64beb705995ea6e942daf3961b957b data/very-berry/loot_table/blocks/thornberry_branch.json
+5e1eb098c64e3751bd610c7e23fcc51724690b15 data/very-berry/loot_table/blocks/thornberry_branch.json
 6c574e9878f0f2cf40ff436680cbe2d96b0f4f27 data/very-berry/loot_table/blocks/voidberry_moss.json
