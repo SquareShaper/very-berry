@@ -71,7 +71,7 @@ public class ModItems {
             setting.food(ModFoodComponents.THORNBERRY_CHIPS, ModFoodComponents.THORNBERRY_CHIPS_EFFECT)
                     .component(ModDataComponentTypes.EFFECT_FOOD, new EffectFoodComponent())
                     .component(ModDataComponentTypes.TEXT_DESCRIPTION, new TextDescriptionComponent("item.very-berry.bundled_thornberry_chips.tooltip"))
-                    .maxDamage(32).maxCount(1)));
+                    .maxDamage(64).maxCount(1)));
 
 
 
