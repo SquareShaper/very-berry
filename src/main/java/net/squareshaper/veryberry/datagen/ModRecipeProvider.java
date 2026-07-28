@@ -40,20 +40,6 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         .input(Items.MILK_BUCKET)
                         .criterion(hasItem(ModItems.FIRESHINE_BERRIES), conditionsFromItem(ModItems.FIRESHINE_BERRIES))
                         .offerTo(recipeExporter);
-
-//          WIP Berry Pastes
-//        Map<Item, Item> BERRY_TO_PASTE =
-//                new ImmutableMap.Builder<Item, Item>()
-//                        .put(ModItems.FIRESHINE_BERRIES, ModItems.FIRESHINE_BERRY_PASTE)
-//                        .put(ModItems.RIMEBERRIES, ModItems.RIMEBERRY_PASTE)
-//                        .put(ModItems.VOIDBERRIES, ModItems.VOIDBERRY_PASTE)
-//                        .put(ModItems.CHRONOBERRIES, ModItems.CHRONOBERRY_PASTE)
-//                        .build();
-
-//        for (Map.Entry<Item, Item> entry: BERRY_TO_PASTE.entrySet()) {
-//            RecipeProvider.offerSmelting(recipeExporter, List.of(entry.getKey()),RecipeCategory.MISC, entry.getValue(),
-//                    0.35f/8, 200/8, "berry_paste");
-//        }
             }
         };
     }

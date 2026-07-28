@@ -41,9 +41,6 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
 
         addDrop(ModBlocks.THORNBERRY_BRANCH, berryBushDropsAge(ModBlocks.THORNBERRY_BRANCH, ModItems.THORNBERRIES, ThornBerryBranch.getMinDrops(),
                 ThornBerryBranch.getMaxDrops(), ThornBerryBranch.getHarvestAge()));
-
-//        addDrop(ModBlocks.CHRONOBERRY_PLANT, berryBushDropsAge(ModBlocks.CHRONOBERRY_PLANT, ModItems.CHRONOBERRIES, ChronoberryPlant.getMinDrops(),
-//                ChronoberryPlant.getMaxDrops(), ChronoberryPlant.getHarvestAge()));
     }
 
     public LootTable.Builder fireshineBerryDrops(Block block, Item item, float minDrops, float maxDrops) {

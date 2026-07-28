@@ -21,7 +21,6 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.FIRESHINE_BERRY_HEAD)
                 .add(ModBlocks.VOID_BERRY_MOSS)
                 .add(ModBlocks.THORNBERRY_BRANCH);
-//                .add(ModBlocks.CHRONOBERRY_PLANT);
 
         valueLookupBuilder(BlockTags.CLIMBABLE)
                 .add(ModBlocks.FIRESHINE_BERRY_BODY)

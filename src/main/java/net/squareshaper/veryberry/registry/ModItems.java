@@ -51,13 +51,6 @@ public class ModItems {
                     .recipeRemainder(Items.BUCKET)
                     .component(ModDataComponentTypes.TEXT_DESCRIPTION, new TextDescriptionComponent("item.very-berry.rimeberry_muffin.tooltip"))));
 
-    //Pastes - WIP
-//    public static final Item FIRESHINE_BERRY_PASTE = registerItem("fireshine_berry_paste", setting -> new Item(setting));
-//    public static final Item RIMEBERRY_PASTE = registerItem("rimeberry_paste", setting -> new Item(setting));
-//    public static final Item VOIDBERRY_PASTE = registerItem("voidberry_paste", setting -> new Item(setting));
-//    public static final Item CHRONOBERRY_PASTE = registerItem("chronoberry_paste", setting -> new Item(setting));
-//    public static final Item THORNBERRY_PASTE = registerItem("thornberry_paste", setting -> new Item(setting));
-
 
 
     private static Item registerItem(String name, Function<Item.Settings, Item> function) {

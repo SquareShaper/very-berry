@@ -52,17 +52,11 @@ public class ModModelProvider extends FabricModelProvider {
 //                                ).coordinate(BlockStateModelGenerator.createSouthDefaultHorizontalRotationStates())
 //                );
 
-        blockStateModelGenerator.blockStateCollector.accept(VariantsBlockModelDefinitionCreator.of(ModBlocks.THORNBERRY_BRANCH)
-                .with(BlockStateVariantMap.models(Properties.AGE_3).generate(stage -> createWeightedVariant(blockStateModelGenerator
-                        .createSubModel(ModBlocks.THORNBERRY_BRANCH, "_age" + stage, Models.CROSS, TextureMap::cross)))));
 
-//        BlockStateVariantMap blockStateVariantMap = BlockStateVariantMap.create(TallBerryBlock.AGE, Properties.DOUBLE_BLOCK_HALF).register((age, half) -> {
-//            return switch (half) {
-//                case UPPER -> BlockStateVariant.create().put(VariantSettings.MODEL, ModelIds.getBlockSubModelId(ModBlocks.CHRONOBERRY_PLANT, "_top_stage_" + age));
-//                case LOWER -> BlockStateVariant.create().put(VariantSettings.MODEL, ModelIds.getBlockSubModelId(ModBlocks.CHRONOBERRY_PLANT, "_bottom_stage_" + age));
-//            };
-//        });
-//        blockStateModelGenerator.blockStateCollector.accept(VariantsBlockStateSupplier.create(ModBlocks.CHRONOBERRY_PLANT).coordinate(blockStateVariantMap));
+//        hard code as JSON as well...
+//        blockStateModelGenerator.blockStateCollector.accept(VariantsBlockModelDefinitionCreator.of(ModBlocks.THORNBERRY_BRANCH)
+//                .with(BlockStateVariantMap.models(Properties.AGE_3).generate(stage -> createWeightedVariant(blockStateModelGenerator
+//                        .createSubModel(ModBlocks.THORNBERRY_BRANCH, "_age" + stage, Models.CROSS, TextureMap::cross)))));
     }
 
     @Override
@@ -76,11 +70,5 @@ public class ModModelProvider extends FabricModelProvider {
         //Berry Foods
         itemModelGenerator.register(ModItems.FIRESHINE_BERRY_JUICE, Models.GENERATED);
         itemModelGenerator.register(ModItems.RIMEBERRY_MUFFIN, Models.GENERATED);
-        //Berry Pastes - WIP
-//        itemModelGenerator.register(ModItems.RIMEBERRY_PASTE, Models.GENERATED);
-//        itemModelGenerator.register(ModItems.FIRESHINE_BERRY_PASTE, Models.GENERATED);
-//        itemModelGenerator.register(ModItems.VOIDBERRY_PASTE, Models.GENERATED);
-//        itemModelGenerator.register(ModItems.CHRONOBERRY_PASTE, Models.GENERATED);
-//        itemModelGenerator.register(ModItems.THORNBERRY_PASTE, Models.GENERATED);
     }
 }
