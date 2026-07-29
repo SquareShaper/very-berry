@@ -21,6 +21,7 @@ public class ModPlacedFeatures {
     public static final RegistryKey<PlacedFeature> RIMEBERRY_KEY = registerKey("rimeberry");
     public static final RegistryKey<PlacedFeature> RIMEBERRY_PATCH_KEY = registerKey("rimeberry_patch");
     public static final RegistryKey<PlacedFeature> FIRESHINE_BERRY_KEY = registerKey("fireshine_berry");
+    public static final RegistryKey<PlacedFeature> THORNBERRY_KEY = registerKey("thornberry");
 //    public static final RegistryKey<PlacedFeature> VOIDBERRY_KEY = registerKey("voidberry");
 
     public static void bootstrap(Registerable<PlacedFeature> context) {
@@ -40,6 +41,9 @@ public class ModPlacedFeatures {
                         EnvironmentScanPlacementModifier.of(Direction.UP, BlockPredicate.hasSturdyFace(Direction.DOWN), BlockPredicate.IS_AIR, 20),
                         RandomOffsetPlacementModifier.vertically(ConstantIntProvider.create(-1)),
                         BiomePlacementModifier.of()));
+
+        register(context, THORNBERRY_KEY, registryLookup.getOrThrow(ModConfiguredFeatures.THORNBERRY_KEY),
+                List.of());
 
 //        register(context, VOIDBERRY_KEY, registryLookup.getOrThrow(ModConfiguredFeatures.VOIDBERRY_KEY),
 //                List.of(CountPlacementModifier.of(UniformIntProvider.create(100, 200)),

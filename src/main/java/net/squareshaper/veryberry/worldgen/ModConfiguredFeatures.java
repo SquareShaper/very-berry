@@ -1,10 +1,7 @@
 package net.squareshaper.veryberry.worldgen;
 
 import net.minecraft.block.BlockState;
-import net.minecraft.registry.Registerable;
-import net.minecraft.registry.RegistryEntryLookup;
-import net.minecraft.registry.RegistryKey;
-import net.minecraft.registry.RegistryKeys;
+import net.minecraft.registry.*;
 import net.minecraft.util.collection.Pool;
 import net.minecraft.util.math.Direction;
 import net.minecraft.util.math.intprovider.ConstantIntProvider;
@@ -23,10 +20,13 @@ import net.squareshaper.veryberry.registry.ModBlocks;
 
 import java.util.List;
 
+import static net.squareshaper.veryberry.VeryBerry.THORNBERRY_GROWTH_CONFIG;
+
 public class ModConfiguredFeatures {
     public static final RegistryKey<ConfiguredFeature<?, ?>> RIMEBERRY_KEY = registerKey("rimeberry");
     public static final RegistryKey<ConfiguredFeature<?, ?>> RIMEBERRY_PATCH_KEY = registerKey("rimeberry_patch");
     public static final RegistryKey<ConfiguredFeature<?, ?>> FIRESHINE_BERRY_KEY = registerKey("fireshine_berry");
+    public static final RegistryKey<ConfiguredFeature<?, ?>> THORNBERRY_KEY = registerKey("thornberry");
 //    public static final RegistryKey<ConfiguredFeature<?, ?>> VOIDBERRY_KEY = registerKey("voidberry");
 
     public static void bootstrap(Registerable<ConfiguredFeature<?, ?>> context) {
@@ -75,6 +75,8 @@ public class ModConfiguredFeatures {
                 BlockPredicate.IS_AIR,
                 true
         ));
+
+        register(context, THORNBERRY_KEY, THORNBERRY_GROWTH_CONFIG, new DefaultFeatureConfig());
 
 //        Block multifaceGrowthBlock = ModBlocks.VOID_BERRY_MOSS;
 //        ConfiguredFeatures.register(

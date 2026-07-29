@@ -3,9 +3,14 @@ package net.squareshaper.veryberry;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.item.v1.ComponentTooltipAppenderRegistry;
 import net.fabricmc.fabric.api.registry.CompostingChanceRegistry;
+import net.minecraft.registry.Registries;
+import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
+import net.minecraft.world.gen.feature.DefaultFeatureConfig;
+import net.minecraft.world.gen.feature.Feature;
 import net.squareshaper.veryberry.registry.*;
 import net.squareshaper.veryberry.worldgen.ModBiomeModifiers;
+import net.squareshaper.veryberry.worldgen.ThornberryBranchFeature;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -15,6 +20,8 @@ import static java.util.Collections.nCopies;
 public class VeryBerry implements ModInitializer {
 	public static final String MOD_ID = "very-berry";
 	public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
+	public static final Feature<DefaultFeatureConfig> THORNBERRY_GROWTH_CONFIG = Registry.register(Registries.FEATURE, "thornberry_growth", new ThornberryBranchFeature(DefaultFeatureConfig.CODEC));
+
 
 	public static Identifier id(String name){
 		return Identifier.of(MOD_ID, name);
